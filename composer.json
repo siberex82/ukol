@@ -1,0 +1,13 @@
+{
+    "require": {
+        "twig/twig": "^2.12",
+        "vlucas/phpdotenv": "^4.1",
+        "swiftmailer/swiftmailer": "^6.2",
+        "larapack/dd": "^1.1",
+        "robmorgan/phinx": "^0.11.7",
+        "gabordemooij/redbean": "^5.5",
+        "mpdf/mpdf": "^8.0",
+        "monolog/monolog": "^1.25",
+        "sinergi/browser-detector": "^6.1"
+    }
+}

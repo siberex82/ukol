@@ -1,0 +1,46 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Добавить продажу</li>
+    </ol>
+</nav>
+
+
+
+<form method="post">
+
+    <div class="form-group">
+        <label for="s">Выбрать пациента</label>
+        <select class="form-control" id="s" name="patid">
+            <option value="NULL">Не указано</option>
+            {{ patientlist|raw }}
+
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="p">Название препарата *</label>
+        <input required name="prep" type="text" class="form-control"
+               id="p" aria-describedby="emailHelp" placeholder="Название препарата *">
+    </div>
+
+    <div class="form-group">
+        <label for="p">Дата продажи *</label>
+        <input name="daypay" autocomplete="off" required type="text" class="form-control"
+               id="datepicker" aria-describedby="emailHelp" placeholder="Дата продажи *">
+    </div>
+
+    <div class="form-group">
+        <label for="p">Дата инъекции *</label>
+        <input name="dateinj" autocomplete="off" required type="text" class="form-control datepicker"
+               id="datepicker2" aria-describedby="emailHelp" placeholder="Дата инъекции *">
+    </div>
+
+    <div class="form-group">
+        <label for="p">Дата смс напоминания *</label>
+        <input name="smsnotify" autocomplete="off" required type="text" class="form-control datepicker"
+               id="datepicker3" aria-describedby="emailHelp" placeholder="Дата смс напоминания *">
+    </div>
+
+    <input type="submit" name="addinj" class="btn btn-primary" value="добавить">
+
+</form>

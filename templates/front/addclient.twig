@@ -1,0 +1,56 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Добавить пациента</li>
+    </ol>
+</nav>
+
+<form method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="f">Фамилия *</label>
+                <input name="thirdname" type="text" class="form-control" required id="f" aria-describedby="emailHelp" placeholder="Фамилия *">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="n">Имя</label>
+                <input name="firstname" type="text" class="form-control"
+                       id="n" aria-describedby="emailHelp" placeholder="Имя">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="l">Отчество</label>
+                <input name="lastname" type="text" class="form-control"
+                       id="l" aria-describedby="emailHelp" placeholder="Отчество">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="t">Номер телефона *</label>
+                <input name="phone" type="tel" class="form-control"
+                       id="t" aria-describedby="emailHelp" placeholder="Номер телефона *" required>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="s">Пол *</label>
+                <select class="form-control" id="s" name="sex">
+                    <option value="NULL">Не указано</option>
+                    <option value="Мужской">Мужской</option>
+                    <option value="Женский">Женский</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <input type="submit" name="addpat" class="btn btn-primary" value="добавить">
+
+</form>

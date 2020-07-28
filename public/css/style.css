@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --yellow:#f7d144;
+    --black:#0a0d0b;
+    --lightgray:whitesmoke;
+    --gray:#8d8e90;
+    --footer:#fbecb1;
+    --lightblue:#e8eff7;
+}
+.container-fluid {
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: "MBlack";
+    src:url("../fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: "MExtraLight";
+    src:url("../fonts/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "MLight";
+    src:url("../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "MMedium";
+    src:url("../fonts/Montserrat-Medium.ttf");
+}
+a,strong, p, input, select {
+    font-family: "MLight";
+}
+a {
+    font-size:12px;
+}
+input, select {
+    font-size:14px;
+}
+.login-bg {
+    background: radial-gradient(blue,mediumpurple);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.enter-cabinet {
+    color: #FFF;
+    width: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    /*box-shadow: 0 0 19px #CCC;*/
+    padding: 25px;
+    /*background: #FFF;*/
+}
+.enter-cabinet h2 {
+    font-family: "MExtraLight";
+    font-size:3em;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom:1px dashed #FFF;
+    padding-bottom: 15px;
+}
+
+.left {
+    width: 20%;
+    background: #343A40;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF;
+    font-family: "MExtraLight";
+    overflow-y: auto;
+}
+.left h2 {
+    font-family: "MExtraLight";
+    font-size:2em;
+    margin-bottom: 35px;
+    text-align: center;
+    border-bottom:1px dashed #FFF;
+    padding-bottom: 15px;
+    color: #ffac6a;
+}
+.left a {
+    color: #FFF;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: block;
+    width: max-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom:2px dotted rgba(255,255,255,0.2);
+}
+.left span {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:13px;
+}
+
+.left a:hover {
+    color: red;
+}
+.right {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    background: whitesmoke;
+    right: 0;
+    top:0;
+    overflow-y: auto;
+    padding: 50px;
+    font-family: "MLight";
+    padding-top: 15px;
+}
+form {
+    background: #E9ECEF;
+    padding: 20px;
+}
+table tbody tr:nth-child(odd){
+    background: #FFF;
+}
+.smslist a i {
+    font-size:1.4em;
+}
+.filter {
+    width: 100%;
+    background: #343A40;
+    color: #FFF;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.bt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

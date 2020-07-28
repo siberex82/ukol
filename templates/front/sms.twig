@@ -1,0 +1,23 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">СМС Напоминания</li>
+    </ol>
+</nav>
+
+<table class="table smslist">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Фамилия клиента</th>
+        <th scope="col">Телефон</th>
+        <th scope="col">Дата продажи</th>
+        <th scope="col">Дата инъекции</th>
+        <th scope="col">Дата смс напоминания</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+       {{ smslist |raw}}
+
+    </tbody>
+</table>

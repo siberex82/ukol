@@ -1,0 +1,56 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Список пациентов</li>
+    </ol>
+</nav>
+
+<div class="filter">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="p">Фамилия пациента</label>
+                <input required name="patname" type="text" class="form-control"
+                       id="p" aria-describedby="emailHelp" placeholder="Фамилия пациента">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="p">Телефон пациента</label>
+                <input required name="pattel" type="text" class="form-control"
+                       id="p" aria-describedby="emailHelp" placeholder="Телефон пациента">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="p">За дату</label>
+                <input required name="fordate" type="text" class="form-control"
+                       id="datepicker4" aria-describedby="emailHelp" placeholder="За дату">
+            </div>
+        </div>
+        <div class="col-md-6 bt">
+            <input type="submit" name="addinj" class="btn btn-primary" value="искать">
+        </div>
+    </div>
+
+</div>
+
+<table class="table smslist">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Фамилия клиента</th>
+        <th scope="col">Телефон</th>
+        <th scope="col">Дата продажи</th>
+        <th scope="col">Дата инъекции</th>
+        <th scope="col">Дата смс напоминания</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    {{ smslist |raw}}
+
+    </tbody>
+</table>
